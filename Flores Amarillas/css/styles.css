@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+/* Estilos para la página de recepción */
+body.reception-page {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Fondo de estrellas animado */
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/images/stars.png') repeat;
+    animation: starsMove 50s linear infinite;
+  }
+  
+  @keyframes starsMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 10000px 5000px; }
+  }
+  
+  /* Contenedor central */
+  .container {
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  /* Texto HOLA animado */
+  .animated-hello {
+    font-size: 5em;
+    opacity: 0;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0.05em;
+    animation: grow 3s ease-in-out forwards, lightUp 3s ease-in-out 3s forwards;
+  }
+  
+  @keyframes grow {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes lightUp {
+    0% {
+      color: white;
+    }
+    100% {
+      color: yellow;
+    }
+  }
+  
+  /* Texto mensaje en amarillo */
+  .message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: yellow;
+  }
+  
+  /* Botón animado con esquinas curveadas */
+  .animated-button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ffeb3b;
+    color: black;
+    border: none;
+    border-radius: 25px; /* Esquinas redondeadas */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1);
+    background-color: #fdd835; /* Cambia el color al pasar el mouse */
+  }
+  
+  
+
+/* Estilos para la página de flores */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+  }
+  
+  /* Estrellas animadas */
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../images/stars.png') repeat;
+    animation: starsMove 50s linear infinite;
+  }
+  
+  /* Animación de las estrellas */
+  @keyframes starsMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 10000px 5000px; }
+  }
+  
+  /* La luna llena */
+  .moon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: 50px;
+    background: url('/images/moon.png') no-repeat center center;
+    background-size: cover;
+  }
