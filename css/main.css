@@ -19,6 +19,10 @@ body {
   position: relative;
 }
 
+audio {
+  display: none; /* O usa 'block' si necesitas depurar */
+}
+
 /* Estilos para el contenedor de las frases */
 .contenedor-frases {
   position: absolute;
