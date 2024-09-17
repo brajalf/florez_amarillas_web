@@ -14,7 +14,11 @@ body.reception-page {
     overflow: hidden;
     font-family: 'Arial', sans-serif;
   }
-  
+
+audio {
+  display: none; /* O usa 'block' si necesitas depurar */
+}
+
   /* Fondo de estrellas animado */
   .stars {
     position: absolute;
